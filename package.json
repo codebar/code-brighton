@@ -7,5 +7,8 @@
     "test": "make test"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "busboy": "^0.2.9"
+  }
 }
