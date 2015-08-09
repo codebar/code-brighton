@@ -12,6 +12,7 @@
   "dependencies": {
     "busboy": "^0.2.9",
     "finalhandler": "^0.4.0",
+    "indexjs": "^0.3.0",
     "router": "^1.1.3"
   }
 }
