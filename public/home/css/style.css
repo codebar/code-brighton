@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Monda Bold';
+    src: url('../fonts/Monda-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monda Regular';
+    src: url('../fonts/Monda-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.dark-purple {
+	background-color: #241530;
+}
+.light-purple {
+	background-color: #C095C8;
+}
+.teal-green {
+	background-color: #00B062;
+}
+.light-grey {
+	color:grey;
+}
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, small, b, i, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+}
+h1 {
+	font-family: 'Monda Bold', 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+}
+header {
+	min-height:80px;
+	padding: 15px;
+}
+header h1 {
+	color:#FFF;
+	font-size:28px;
+}
+header h2 {
+	color:#CCC;
+	font-size:18px;
+	text-transform: uppercase;
+}
+.intro {
+	padding:20px;
+	min-height:200px;
+	text-align:center;
+}
+.list-view {
+	height:400px;
+	border-bottom: 1px solid #00B062;
+	border-top: 1px solid #00B062;
+}
+.item-view {
+	width: 40%;
+    float: left;
+}
+.map-view {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    width: 60%;
+    float: right;
+}
+.map-view iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+}
+.about {
+	padding:20px;
+	min-height:400px;
+	text-align:center;
+	background-image:url('../img/codebar-session.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width:100%;
+}
