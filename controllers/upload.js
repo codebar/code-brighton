@@ -4,10 +4,13 @@ var unzip = require('unzip');
 var uuid = require('node-uuid');
 var fstream = require('fstream');
 
+var store = require('../store');
+
 exports.post = function(req, res){
+    var id = uuid.v4();
 	var busboy = new Busboy({headers: req.headers});
 	busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
-		var savePath = path.resolve(__dirname + '/../public/' + uuid.v4());
+		var savePath = path.resolve(__dirname + '/../public/' + id);
 
 		file.pipe(unzip.Parse()).on('entry', function(entry){
 
@@ -29,7 +32,12 @@ exports.post = function(req, res){
 
 	});
 	busboy.on('finish', function() {
-		res.writeHead(303, { Connection: 'close', Location: '/' });
+        store.createProject({
+            id: id,
+            timestamp: Date.now()
+        });
+		res.writeHead(201, { Connection: 'close' });
+        res.write(id);
 		res.end();
 	});
 	req.pipe(busboy);
