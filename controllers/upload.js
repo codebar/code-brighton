@@ -18,15 +18,3 @@ exports.post = function(req, res){
 	});
 	req.pipe(busboy);
 };
-
-exports.get = function(req, res){
-	res.writeHead(200, { Connection: 'close' });
-	res.write('<html><head></head><body>\
-		       <form method="POST" enctype="multipart/form-data">\
-			<input type="text" name="textfield"><br />\
-			<input type="file" name="filefield"><br />\
-			<input type="submit">\
-		      </form>\
-		    </body></html>');
-	res.end();
-};
