@@ -111,3 +111,41 @@ header h2 {
     left: 0;
     width: 100% !important;
 }
+
+button {
+	width:150px;
+	height:60px;
+	background-color: #241530;
+	color:white;
+	font-size:18px;
+	border-radius:5px;
+	border: 2px solid #C095C8;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin: 50px auto 0px;
+	padding:10px;
+	text-align:center;
+	width:100%;
+}
+
+footer p {
+
+}
+
+footer img {
+	margin:10px 30px;
+}
+
+#codebar-logo {
+	height: 140px;
+    margin-bottom: -25px;
+}
+
+#bdf-logo {
+	height:90px;
+}
