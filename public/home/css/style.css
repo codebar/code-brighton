@@ -38,20 +38,55 @@ header {
 	min-height:80px;
 	padding: 15px;
 }
+
+img.masthead {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header h1 {
 	color:#FFF;
 	font-size:28px;
 }
 header h2 {
 	color:#CCC;
-	font-size:18px;
+	font-size:35px;
 	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 150%;
 }
-.intro {
-	padding:20px;
-	min-height:200px;
-	text-align:center;
+.intro, .about {
+	padding: 50px;
+	min-height:300px;
+	text-align:left;
+	line-height: 170%;
+	max-width: 700px;
+	margin: auto;
 }
+.about {
+	clear:both;
+}
+.intro p, .about p {
+	padding: 20px 20px 40px 20px;
+}
+
+.intro h1, .about h1 {
+	font-size: 25px;
+	line-height: 170%;
+	letter-spacing: -0.4px;
+	padding: 7px;
+	color:#00B062;
+}
+
+.intro h3, .about h3 {
+	font-size: 22px;
+	line-height: 140%;
+	letter-spacing: -0.4px;
+	padding: 10px 20px 10px 20px;
+}
+
 .list-view {
 	height:400px;
 	border-bottom: 1px solid #00B062;
@@ -68,20 +103,11 @@ header h2 {
     overflow: hidden;
     width: 60%;
     float: right;
+    margin-bottom: -75%;
 }
 .map-view iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
-}
-.about {
-	padding:20px;
-	min-height:400px;
-	text-align:center;
-	background-image:url('../img/codebar-session.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	width:100%;
 }
