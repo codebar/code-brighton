@@ -34,15 +34,23 @@ body {
 h1 {
 	font-family: 'Monda Bold', 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
 }
+
 header {
 	min-height:80px;
+}
+
+.header-background {
+	background-image:url('../img/pattern.png');
 	padding: 15px;
+	background-size: 16%;
 }
 
 img.masthead {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 38%;
+    min-width: 200px;
 }
 
 header h1 {
