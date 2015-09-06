@@ -57,6 +57,7 @@ header h1 {
 	color:#FFF;
 	font-size:28px;
 }
+
 header h2 {
 	color:#CCC;
 	font-size:35px;
@@ -65,6 +66,7 @@ header h2 {
 	text-align: center;
 	line-height: 150%;
 }
+
 .intro, .about {
 	padding: 50px;
 	min-height:300px;
@@ -72,10 +74,13 @@ header h2 {
 	line-height: 170%;
 	max-width: 700px;
 	margin: auto;
+	padding-bottom: 5px;
 }
+
 .about {
 	clear:both;
 }
+
 .intro p, .about p {
 	padding: 20px 20px 40px 20px;
 }
@@ -134,7 +139,13 @@ footer img {
 }
 
 /*Map & Map List Styles*/
-
+#map-locations {
+	font-size: 25px;
+	line-height: 170%;
+	letter-spacing: -0.4px;
+	padding: 7px;
+	color:#00B062;
+}
 .map-section {
 	width:100%;
 	margin:0px auto;
