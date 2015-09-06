@@ -1,0 +1,26 @@
+.jumbotron{
+  text-align: center;
+}
+.jumbotron .name {
+  font-size: 30px;
+}
+h2{
+  padding-bottom: 20px;
+}
+.resolve li {
+  list-style: none;
+  padding:10px;
+}
+.resolve li:nth-child(odd){
+  background-color: #F7E4E4;
+}
+.resolve li:nth-child(even){
+  background-color: #eee;
+}
+a {
+  display: block;
+  padding: 0px 30px;
+}
+.mugshot, .name {
+  text-align: center;
+}

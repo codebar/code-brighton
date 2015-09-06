@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Monda Bold';
+    src: url('../fonts/Monda-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monda Regular';
+    src: url('../fonts/Monda-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dark-purple {
+	background-color: #241530;
+}
+
+.light-purple {
+	background-color: #C095C8;
+}
+
+.teal-green {
+	background-color: #00B062;
+}
+
+.light-grey {
+	color:grey;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, small, b, i, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:#C095C8;
+	font-size: 25px;
+}
+
+h1 {
+	font-family: 'Monda Bold', 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+}
+
+header {
+	min-height:80px;
+}
+
+.header-background {
+	background-image:url('../img/pattern.png');
+	padding: 15px;
+	background-size: 16%;
+}
+
+img.masthead {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+    min-width: 200px;
+}
+
+header h1 {
+	color:#FFF;
+	font-size:28px;
+}
+
+header h2 {
+	color:#CCC;
+	font-size:35px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 150%;
+}
+
+.content {
+	padding: 50px;
+	min-height:300px;
+	text-align:left;
+	line-height: 170%;
+	max-width: 700px;
+	margin: auto;
+}
+
+.content p {
+	padding: 20px 20px 40px 20px;
+}
+
+.content h1 {
+	font-size: 25px;
+	line-height: 170%;
+	letter-spacing: -0.4px;
+	padding: 7px;
+	color:#00B062;
+}
+
+.content h3 {
+	font-size: 22px;
+	line-height: 140%;
+	letter-spacing: -0.4px;
+	padding: 10px 20px 10px 20px;
+}
+
+button {
+	width:150px;
+	height:60px;
+	background-color: #241530;
+	color:white;
+	font-size:18px;
+	border-radius:5px;
+	border: 2px solid #C095C8;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin: 50px auto 0px;
+	padding:10px;
+	text-align:center;
+	width:100%;
+}
+
+footer p {
+
+}
+
+footer img {
+	margin:10px 30px;
+}
+
+#codebar-logo {
+	height: 140px;
+    margin-bottom: -25px;
+}
+
+#bdf-logo {
+	height:90px;
+}

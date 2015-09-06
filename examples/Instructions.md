@@ -4,6 +4,11 @@ We are creating a digialt scavenger hunt throughout Brighton and Hove where stud
 # What sort of website? 
 We are providing you with a few suggestions of the types of info you may want to display, but the overall theme is to uncover the digital side of Brighton. 
 
+[General Template](https://www.google.com)
+[Persona Template](https://www.google.com)
+[Factual Template](https://www.google.com)
+[Location Image Gallery](https://www.google.com)
+
 We are also providing a few examples that have a specific header and footer that will be consistent across all sites.
 ## Theme ideas
 - Diversity in Brighotn

@@ -1,10 +1,6 @@
-
-#main h1 {
-  padding: 0 20px;
-  text-align: center;
-  font-family: 'Satisfy', sans-serif;
+.content {
+  max-width: 1200px;
 }
-
 #photos {
    /* Prevent vertical gaps */
    line-height: 0;
@@ -30,11 +26,16 @@
 
 #photos .image span {
   position: absolute;
-  top: 15px;
-  left: 0;
-  font-size: 2em;
+  top: 0px;
+  left: 0px;
+  font-size: 20px;
   font-weight: bold;
   color: #e5e3f1;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 20px;
+  height: 21px;
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
 @media (max-width: 1200px) {
