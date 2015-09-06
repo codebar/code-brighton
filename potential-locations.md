@@ -6,4 +6,7 @@ Ribot
 Bison Beer
 New England House
 Genie
+Lighthouse
+Built by Buffalo
+Zoingimage
 
