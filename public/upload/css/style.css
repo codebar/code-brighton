@@ -1,0 +1,57 @@
+h1 {
+	color: #241530;
+}
+
+.folder-structure {
+	line-height:0.4;
+    padding: 20px;
+    line-height: 0.4;
+    width: 200px;
+    background-color: #E6E6E6
+}
+
+.sub-file {
+	margin-left:60px;
+}
+
+.sub-folder {
+	margin-left:15px;
+}
+
+#upload-form {
+	margin-top:30px;
+}
+
+.optional-info {
+	width:400px;
+	margin:0px 0px 10px;
+	border:1px solid #FFAEAE;
+	padding:0px 10px 5px;
+	font-size:75%;
+}
+
+.optional-info input {
+	margin-bottom:10px;
+}
+
+input {
+	min-width:100px;
+	height:30px;
+	padding-left:10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.button {
+	width:150px;
+	height:60px;
+	background-color: #241530;
+	color:white;
+	font-size:18px;
+	border-radius:5px;
+	border: 2px solid #C095C8;
+}
+
+.button:hover {
+	cursor: pointer;
+}
