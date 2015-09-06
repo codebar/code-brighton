@@ -4,12 +4,8 @@ We are creating a digialt scavenger hunt throughout Brighton and Hove where stud
 # What sort of website? 
 We are providing you with a few suggestions of the types of info you may want to display, but the overall theme is to uncover the digital side of Brighton. 
 
-- [General Template](https://github.com/codebar/code-brighton/tree/master/examples/general)
-- [Persona Template](https://github.com/codebar/code-brighton/tree/master/examples/personas)
-- [Factual Template](https://github.com/codebar/code-brighton/tree/master/examples/factual)
-- [Location Image Gallery](https://github.com/codebar/code-brighton/tree/master/examples/location-gallery)
-
 We are also providing a few examples that have a specific header and footer that will be consistent across all sites.
+
 ## Theme ideas
 - Diversity in Brighton
 - Influential Digital Personas
@@ -18,6 +14,12 @@ We are also providing a few examples that have a specific header and footer that
 - Brighton Digital Festival Event Hosts
 - Codebar Hosts and Sponsors
 - Places of Historical Significance
+
+## Examples Templates
+- [General Template](https://github.com/codebar/code-brighton/tree/master/examples/general)
+- [Persona Template](https://github.com/codebar/code-brighton/tree/master/examples/personas)
+- [Factual Template](https://github.com/codebar/code-brighton/tree/master/examples/factual)
+- [Location Image Gallery](https://github.com/codebar/code-brighton/tree/master/examples/location-gallery)
 
 # How are we presenting this to the public?
 Code and Chips is a free scavenger hunt around unusual locations in Brighton. Take part to discover new places and find out a little bit about coding along the way. It is brought to you by Codebar, an organisation that nurtures diversity in the coding community.
