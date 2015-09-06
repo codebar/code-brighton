@@ -14,5 +14,12 @@ exports.getById = function getById(req, res){
 };
 
 exports.getAll = function getAll(req, res){
-    store.getAllProjects().pipe(res);
+    var projects = [];
+    store.getAllProjects().on('data', function(data){
+        projects.push(data);
+    }).on('end', function(){
+        res.writeHead(200, { Accept: 'application/json' });
+        res.write(JSON.stringify(projects));
+        res.end();
+    });
 };

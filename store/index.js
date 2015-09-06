@@ -14,5 +14,5 @@ exports.getProject = function getProject(id, callback){
 };
 
 exports.getAllProjects = function getAllProjects(callback){
-    return db.createReadStream({keys: true, values: true, valueEncoding: 'utf8'});
+    return db.createReadStream({keys: true, values: true});
 };
