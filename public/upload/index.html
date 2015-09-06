@@ -7,8 +7,7 @@
     	<h1>Student Uploads</h1>
     	<p>This is where you will upload your website. To do so, please save your website directory as a .zip in a format like this.</p>
     	<div class="folder-structure">
-			<p>/project</p>
-			<p>│   </p>
+			<p>folder</p>
 			<p>│   index.html</p>
 			<p class="sub-folder">└── styles</p>
 			<p class="sub-file">    │   main.css</p>
@@ -16,12 +15,16 @@
 			<p class="sub-file">    │   image.png</p>
 			<p class="sub-folder">└── js</p>
 			<p class="sub-file">    │   main.js</p>
+            <p class="sub-folder">└── fonts</p>
+            <p class="sub-file">    │   font.ttf</p>
     	</div>
+        <p>Create a .zip with everything in your folder</p>
+        <h2>Submit your project here</h2>
         <form action="/upload" method="POST" enctype="multipart/form-data" id="upload-form">
-            <label for="address">Street address of where the tags will be placed</label>
+            <label for="address">Street address of where the tags will be placed:</label>
             <input type="text" name="address" placeholder="Address">
             </br>
-            <label for="notes">Optional specific instructions for finding check in sticker</label>
+            <label for="notes">Optional specific instructions for finding check in sticker:</label>
             <input type="text" name="hints" placeholder="Hints">
             </br>
             <label for="filefield">Choose a zip folder to upload:</label>
@@ -29,7 +32,7 @@
             </br>
             <div class="optional-info">
                 <p class="instructions-head">OPTIONAL</p>
-                <p class="instructions">If you are already have a url, please input the short URL parameter here:</p>
+                <p class="instructions">If you are already have a url, please input the short URL parameter here to update your website:</p>
                 <input type="text" name="shorturl"><br />
             </div>
             <input class="button" type="submit">
