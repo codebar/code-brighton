@@ -32,8 +32,11 @@ exports.post = function(req, res){
             }
         });
 
-	});
-	busboy.on('finish', function() {
+    });
+    busboy.on('field', function(field, value){
+        project[field] = value;
+    });
+    busboy.on('finish', function() {
         project.timestamp = Date.now();
         store.createProject(project);
 		res.writeHead(201, { Connection: 'close' });
