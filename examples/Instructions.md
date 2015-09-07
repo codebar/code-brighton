@@ -14,13 +14,13 @@ How can we represent diversity in Brighton? The Factual starter template comes p
 Brighton is considered the Silicon valley of the UK. So who are the people who've put Brighton on the digital map? The Persona starter template lets you create a profile page for your favourite persona. Find out something about them and a get a photo from the web.
 
 ### The quirky side of Brighton
-There are some very interesting things about Brighton that be revealed here. Dig out some interesting ones. Take a look out at the [BN1 Boardgame](http://www.worldofbeardandpog.co.uk/Bedsitgames/bn13rd.html) for inspiration. Use any of the starter templates to help you show people what an amazing and quirky place Brighton is. 
+There are some very interesting things about Brighton that be revealed here. Dig out some interesting ones. Take a look at the [BN1 Boardgame](http://www.worldofbeardandpog.co.uk/Bedsitgames/bn13rd.html) for inspiration. Use any of the starter templates to help you show people what an amazing and quirky place Brighton is. 
 
 ### Brighton Digital Festival Events
-Can you provide a useful signposting or profiling page for one of the digital events happenning this September? Use any of the starter templates to help promote an event.
+Can you provide a useful signposting or profiling page for one of the digital events happening this September at the [Brighton Digital Festival?](http://brightondigitalfestival.co.uk/) Use any of the starter templates to help promote an event.
 
 ### Brighton Digital Festival Event Hosts
-Who are the people behind the events? What motivates them to do it and what kind of people come to them? The diversity template might be useful if you want to show some statistics or facts. 
+Who are the people behind the events? What motivates them to do it and what kind of people come to them? The factual template might be useful if you want to show some statistics or facts. 
 
 ### Codebar Hosts and Sponsors
 Lets thank them by sharing some interesting things about them and what they do. Perhaps an interview or a photowall with all their quirky interiors (people rarely see this). You can choose one of the templates to start on this.
