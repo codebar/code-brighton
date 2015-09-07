@@ -7,13 +7,26 @@ We are providing you with a few suggestions of the types of info you may want to
 We are also providing a few examples that have a specific header and footer that will be consistent across all sites.
 
 ## Theme ideas
-- Diversity in Brighton
-- Influential Digital Personas
-- The quirky side of Brighton
-- Brighton Digital Festival Events
-- Brighton Digital Festival Event Hosts
-- Codebar Hosts and Sponsors
-- Places of Historical Significance
+### Diversity in Brighton
+How can we represent diversity in Brighton? The Factual starter template comes packed with some data visualisation components as well as some spaces for 'facts' 
+
+### Influential Digital Personas
+Brighton is considered the Silicon valley of the UK. So who are the people who've put Brighton on the digital map? The Persona starter template lets you create a profile page for your favourite persona. Find out something about them and a get a photo from the web.
+
+### The quirky side of Brighton
+There are some very interesting things about Brighton that be revealed here. Dig out some interesting ones. Take a look at the [BN1 Boardgame](http://www.worldofbeardandpog.co.uk/Bedsitgames/bn13rd.html) for inspiration. Use any of the starter templates to help you show people what an amazing and quirky place Brighton is. 
+
+### Brighton Digital Festival Events
+Can you provide a useful signposting or profiling page for one of the digital events happening this September at the [Brighton Digital Festival?](http://brightondigitalfestival.co.uk/) Use any of the starter templates to help promote an event.
+
+### Brighton Digital Festival Event Hosts
+Who are the people behind the events? What motivates them to do it and what kind of people come to them? The factual template might be useful if you want to show some statistics or facts. 
+
+### Codebar Hosts and Sponsors
+Lets thank them by sharing some interesting things about them and what they do. Perhaps an interview or a photowall with all their quirky interiors (people rarely see this). You can choose one of the templates to start on this.
+
+### Places of Historical Significance
+Can you tell the story of Brighton's digital past through photos and text? the Location starter template starts you off with a photo-wall. Try Flickr for some creative commons pics.
 
 ## Examples Templates
 - [General Template](https://github.com/codebar/code-brighton/tree/master/examples/general)
