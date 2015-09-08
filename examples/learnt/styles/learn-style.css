@@ -1,4 +1,9 @@
 
+.content, .content h1 {
+  padding: 0;
+  font-family: 'Special Elite', sans-serif;
+  background: none;
+}
 section {
   min-height: 200px;
   border-bottom: 10px solid #38608a;
@@ -10,7 +15,8 @@ section {
 }
 
 #title h1 {
-  font-family: 'Special Elite', sans-serif;
+  font-size: 2em;
+  color: #243e5a;
 }
 
 section a {
@@ -28,10 +34,6 @@ section p {
   font-size: 20px;
 }
 
-h2 {
-
-}
-
 .content {
   max-width: 1200px;
 }
@@ -41,12 +43,11 @@ section:after {
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-  position: absolute;
-  font-size: 120px;
+  float: right;
+  font-size: 11em;
   color: lightblue;
-  top: 0px;
-  right: 60px;
-  z-index: -999;
+  margin: -100px 30px;
+  z-index: 999;
 }
 
 section.clock:after {
