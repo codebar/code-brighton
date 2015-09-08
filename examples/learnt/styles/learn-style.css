@@ -1,0 +1,62 @@
+
+section {
+  min-height: 200px;
+  border-bottom: 10px solid #38608a;
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+#title h1 {
+  font-family: 'Special Elite', sans-serif;
+}
+
+section a {
+  color: #FCDC3B;
+}
+
+section a:hover {
+  text-decoration: none;
+  color: #FCD116;
+}
+
+section p {
+  margin-top: 40px;
+  text-align: right;
+  font-size: 20px;
+}
+
+h2 {
+
+}
+
+.content {
+  max-width: 1200px;
+}
+
+section:after {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  font-size: 120px;
+  color: lightblue;
+  top: 0px;
+  right: 60px;
+  z-index: -999;
+}
+
+section.clock:after {
+  content: "\f017";
+}
+
+section.code:after {
+  content: "\f121";
+}
+
+section.lightbulb:after {
+  content: "\f0eb";
+}
