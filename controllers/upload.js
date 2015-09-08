@@ -10,6 +10,7 @@ exports.post = function(req, res){
     var project = {
         id: uuid.v4()
     };
+    var url = shortid.generate();
 	var busboy = new Busboy({headers: req.headers});
 	busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
 		var savePath = path.resolve(__dirname + '/../public/' + project.id);
