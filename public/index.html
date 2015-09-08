@@ -1,8 +1,50 @@
 <html>
 	<head>
-		<title> Homepage! </title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+		<link href="style/main.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
-		<h1> Welcome, to the homepage! </h1>
+	<body onLoad="initialize()">
+
+		<header class="dark-purple">
+			<div class="header-background">
+				<img class="masthead" src='img/BrightonDigiHunt-logo.png' alt="Code and Chips: Digital Scavenger Hunt"/>
+			</div>
+		</header>
+		<div class="content">
+			<div class="intro">
+				<h1>What is it?</h1>
+				<p>Code and Chips is a free scavenger hunt around unusual locations in Brighton. Take part to discover new places and find out a little bit about coding along the way. It is brought to you by Codebar, an organisation that nurtures diversity in the coding community.
+				</p>
+				<h1>Who is it for?</h1>
+				
+				<p>If you are a complete coding newbie that's great - the challenge is designed so that anyone can take part, no coding knowledge required! If you are a coding expert, get involved anyway and find out what Codebar is about.
+				<br>This event is open to women, LGBTQ and others under represented in the tech community over the ages of 18.
+				</p>
+				<h1>How do I get started?</h1>
+				<p>You need a smartphone with location services. To unlock the challenges go to the locations below - the chips will direct your phone to facts and challenges created by Codebar students. </p>
+				<h1 id="map-locations">Current Locations:</h1>
+			</div>
+			<div class="map-section">
+				<div id="locs"></div>
+				<div id="map_canvas"></div>
+			</div>
+			<div class="about">
+			<h1>What is Codebar?</h1>
+				<h3>codebar is a non-profit initiative that facilitates the growth of a diverse tech community by running regular programming workshops.</h3>
+				<p>Our goal is to enable underrepresented groups to learn programming in a safe and collaborative environment and expand their career opportunities. To achieve this, we run free weekly workshops in Brighton, regular events and try to create opportunities for our students making technology and coding more accessible.</p>
+				<a href="http://codebar.io"><button>Learn More</button></a>
+			</div>
+		</div>
+		<footer>
+			<h1>#BrightonDigiHunt</h1>
+			</br>
+			<p>This event is funded by a Grassroots Award Grant from Brighton Digital Festival</p>
+			<div>
+				<a href="http://codebar.io"><img src="img/codebar.png" id="codebar-logo" alt="codebar.io logo"/></a>
+				<a href="http://brightondigitalfestival.co.uk/"><img src="img/bdf.png" id="bdf-logo" alt="brighton digital festival logo"/></a>
 	</body>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 </html>
