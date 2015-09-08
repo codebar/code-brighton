@@ -2,6 +2,7 @@ var path = require('path');
 var Busboy = require('busboy');
 var unzip = require('unzip');
 var uuid = require('node-uuid');
+var shortid = require('shortid');
 var fstream = require('fstream');
 
 var store = require('../store');
@@ -40,8 +41,15 @@ exports.post = function(req, res){
     busboy.on('finish', function() {
         project.timestamp = Date.now();
         store.createProject(project);
+        if (project.shorturl) {
+            url = project.shorturl;
+        }
+        store.createUrlMapping({
+            url: url,
+            id: project.id
+        });
 		res.writeHead(201, { Connection: 'close' });
-        res.write(project.id);
+        res.write(url);
 		res.end();
 	});
 	req.pipe(busboy);
