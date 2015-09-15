@@ -1,6 +1,6 @@
 var path = require('path');
 var Busboy = require('busboy');
-var unzip = require('unzip');
+var unzip = require('unzip2');
 var uuid = require('node-uuid');
 var shortid = require('shortid');
 var fstream = require('fstream');
@@ -27,13 +27,17 @@ exports.post = function(req, res){
             }
 
             var uploadPath = savePath + '/' + entryPathNormalised;
-            var uploadStream = fstream.Writer(uploadPath);
+            console.log(uploadPath);
+            var uploadStream = fstream.Writer(uploadPath).on('error', function(error){
+            });
 
             if (entry.type === 'File') {
-                entry.pipe(uploadStream);
+                entry.pipe(uploadStream).on('error', function(error){
+                });
             } else {
                 entry.autodrain();
             }
+        }).on('error', function(error) {
         });
 
     });
