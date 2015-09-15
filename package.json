@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "bunyan": "^1.5.1",
+    "adm-zip": "^0.4.7",
     "busboy": "^0.2.9",
     "finalhandler": "^0.4.0",
     "fstream": "^1.0.7",
@@ -21,6 +22,7 @@
     "send": "^0.13.0",
     "serve-static": "^1.10.0",
     "shortid": "^2.2.2",
-    "unzip": "^0.1.11"
+    "unzip": "^0.1.11",
+    "unzip2": "^0.2.5"
   }
 }
