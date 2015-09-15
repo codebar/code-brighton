@@ -2,6 +2,8 @@ var http = require('http');
 var finalhandler = require('finalhandler');
 var router = require('./lib/router');
 
+var logger = require('./lib/logger');
+
 var server = http.createServer();
 
 server.on('request', function(req, res){
@@ -9,5 +11,6 @@ server.on('request', function(req, res){
 });
 var port = process.env.PORT || 3030;
 
-console.log('Listening on http://127.0.0.1:' + port);
-server.listen(port);
+server.listen(port, function(){
+    logger.info('Listening on http://' + server.address().address + ':' + port);
+});
