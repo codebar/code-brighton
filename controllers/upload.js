@@ -11,7 +11,8 @@ var PASSWORD = process.env.UPLOAD_PASSWORD || 'changeme1';
 
 exports.post = function(req, res){
     var project = {
-        id: uuid.v4()
+        id: uuid.v4(),
+        validated: false
     };
     var url = shortid.generate();
 	var busboy = new Busboy({headers: req.headers});
