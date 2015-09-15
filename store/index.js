@@ -35,6 +35,6 @@ exports.createUrlMapping = function createUrlMapping(mapping, callback){
 };
 
 exports.getUrlMapping = function getUrlMapping(url, callback){
-    logger.info('DB:: GET:: url-mapping!' + mapping.url);
+    logger.info('DB:: GET:: url-mapping!' + url);
     db.get('url-mapping!' + url, callback);
 };
