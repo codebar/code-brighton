@@ -4,6 +4,7 @@ var unzip = require('unzip2');
 var uuid = require('node-uuid');
 var shortid = require('shortid');
 var fstream = require('fstream');
+var Zip = require('adm-zip');
 
 var store = require('../store');
 
@@ -16,30 +17,13 @@ exports.post = function(req, res){
     var url = shortid.generate();
 	var busboy = new Busboy({headers: req.headers});
 	busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+        var zipSavePath = path.resolve(__dirname + '/../zips/' + project.id + '.zip');
 		var savePath = path.resolve(__dirname + '/../public/' + project.id);
 
-		file.pipe(unzip.Parse()).on('entry', function(entry){
-
-            var entryPathNormalised = entry.path.split('/').slice(1).join('/');
-
-            if (!entryPathNormalised) {
-                return entry.autodrain();
-            }
-
-            var uploadPath = savePath + '/' + entryPathNormalised;
-            console.log(uploadPath);
-            var uploadStream = fstream.Writer(uploadPath).on('error', function(error){
-            });
-
-            if (entry.type === 'File') {
-                entry.pipe(uploadStream).on('error', function(error){
-                });
-            } else {
-                entry.autodrain();
-            }
-        }).on('error', function(error) {
+        file.pipe(fstream.Writer(zipSavePath)).on('close', function(){
+            var zip = new Zip(zipSavePath);
+            zip.extractAllTo(savePath);
         });
-
     });
     busboy.on('field', function(field, value){
         project[field] = value;
