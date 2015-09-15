@@ -29,3 +29,18 @@ exports.getAll = function getAll(req, res){
         writeJSON(res, projects);
     });
 };
+
+exports.setValid = function(req, res){
+    store.getProject(req.params.id, function(error, project){
+        if (error) {
+            return handleError(res);
+        }
+        project.validated = true;
+        store.updateProject(project, function(error){
+            if (error) {
+                return handleError(res);
+            }
+            writeJSON(res, project);
+        });
+    });
+};
