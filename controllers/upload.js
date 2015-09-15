@@ -7,6 +7,8 @@ var fstream = require('fstream');
 
 var store = require('../store');
 
+var PASSWORD = process.env.UPLOAD_PASSWORD || 'changeme1';
+
 exports.post = function(req, res){
     var project = {
         id: uuid.v4()
@@ -39,6 +41,12 @@ exports.post = function(req, res){
         project[field] = value;
     });
     busboy.on('finish', function() {
+        if (project.password !== PASSWORD) {
+            res.writeHead(401);
+            res.write('Unauthorized');
+            return res.end();
+        }
+        delete project.password;
         project.timestamp = Date.now();
         store.createProject(project);
         if (project.shorturl) {
