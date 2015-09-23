@@ -8,7 +8,7 @@ function handleError(res) {
 
 function writeJSON(res, json){
     res.writeHead(200, { Accept: 'application/json' });
-    res.write(JSON.stringify(project));
+    res.write(JSON.stringify(json));
     res.end();
 }
 
