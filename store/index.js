@@ -16,7 +16,7 @@ exports.updateProject = function createProject(project, callback){
 };
 
 exports.getProject = function getProject(id, callback){
-    logger.info('DB:: GET:: project!' + project.id);
+    logger.info('DB:: GET:: project!' + id);
     db.get('project!' + id, callback);
 };
 
